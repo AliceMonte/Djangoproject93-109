@@ -11,7 +11,5 @@ def about(request):
     return render(request, 'main/about.html')
 def create(request):
     form = TaskForm()
-    context = {
-        'form': form
-    }
-    return render(request, 'main/create.html')
+    context = {"form": form}
+    return render(request, 'main/create.html', context)
